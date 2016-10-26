@@ -41,15 +41,21 @@
     <div class="row">
         <div class="col-sm-4">
             <label for="Bio">Bio</label>
-            <textarea runat="server" class="form-control"></textarea>
+            <textarea runat="server" rows="5" class="form-control"></textarea>
         </div>
     </div>
 <br />
     <div class="row">
-        <div class="col-sm-4">
-            <button runat="server" type="button" class="btn btn-default btn-lg">
+        <div class="col-sm-2">
+            <button runat="server" id="submit" onclick="submit_Click" type="button" class="btn btn-default btn-lg">
                 <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
                 Submit
+            </button>
+        </div>
+        <div class="col-sm-2">
+            <button runat="server" ID="reset" onclick="reset_Click" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                Reset
             </button>
         </div>
     </div>
