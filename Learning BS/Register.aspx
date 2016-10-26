@@ -2,9 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-<div class="container-fluid">
-    <h1 style="font-family:'Ubuntu', sans-serif">USER REGISTRATION</h1>
+<br /><br />
+<div class="container-fluid" >
+    <h1 class="animated slideInDown " id="userreg" style="font-family:'Ubuntu', sans-serif">USER REGISTRATION</h1>
+    <br />
     <div class="row">
         <div class="col-sm-2">
             <label for="FName">First Name</label>
@@ -47,18 +48,17 @@
 <br />
     <div class="row">
         <div class="col-sm-2">
-            <button runat="server" id="submit" onclick="submit_Click" type="button" class="btn btn-default btn-lg">
+            <button runat="server" id="submit" onclick="submit_Click" type="button" class="btn btn-default btn-lg wow fadeInUp">
                 <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
                 Submit
             </button>
         </div>
         <div class="col-sm-2">
-            <button runat="server" ID="reset" onclick="reset_Click" type="button" class="btn btn-default btn-lg">
+            <button runat="server" ID="reset" onclick="reset_Click" type="button" class="btn btn-default btn-lg wow fadeInUp">
                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 Reset
             </button>
         </div>
     </div>
 </div>
-
 </asp:Content>

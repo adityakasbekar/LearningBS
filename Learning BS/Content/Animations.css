@@ -1,4 +1,4 @@
-﻿@keyframes webtitle {
+﻿@keyframes color_transition1 {
     from {
         color: burlywood;
     }
@@ -6,6 +6,49 @@
     to {
         color: beige;
     }
+}
+
+a{
+    text-decoration:none;
+}
+
+@keyframes enlarge{
+    from{
+        color:burlywood;
+        font-size:unset;
+    }
+    to{
+        color:white;
+        font-size: large;
+    }
+}
+
+a:hover{
+  text-decoration:none;
+  color: white;    
+  animation: enlarge;
+  animation-duration:1s;
+  font-size:large;
+}
+
+#userreg{
+    animation: contColorChange 12s infinite;
+    animation-timing-function:ease;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes contColorChange{
+    0%{color: red;}
+    10%{color: green;}
+    20%{color: aqua;}
+    30%{color: crimson;}
+    40%{color: darkslategrey;}
+    50%{color: maroon;}
+    60%{color: gold;}
+    70%{color: lightskyblue;}
+    80%{color: seagreen;}
+    90%{color: hotpink;}
+    100%{color: rebeccapurple;}
 }
 
 
